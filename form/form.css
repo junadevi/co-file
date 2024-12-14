@@ -30,6 +30,7 @@ nav .logo a{
     max-width: 440px;
     padding: 0 20px ;
     margin: 170px auto;
+    overflow-y: auto;
 }
 .wrapper
 {
