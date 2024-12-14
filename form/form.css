@@ -27,9 +27,9 @@ nav .logo a{
 }
 .container
 {
-    max-width: 440px;
+    max-width: 500px;
     padding: 0 20px ;
-    margin: 170px auto;
+    margin: 20px auto;
     overflow-y: auto;
 }
 .wrapper
