@@ -1,0 +1,43 @@
+.image-container {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    margin: 0 auto 15px; /* Center the image and add space below */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.card:hover .image-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Change background on hover */
+}
+
+.card:hover .image-container img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.card {
+    height: 250px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    border: 2px solid transparent; /* Initial border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Change background on hover */
+    transform: scale(1.05) translateY(-5px); /* Slightly enlarge and move up */
+    border: 2px solid #f7f7f7; /* Change border color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
